@@ -4,8 +4,8 @@ def update():
     response, error = cmd.communicate()
     p = re.compile(r'\t\d+\.(.*?)\s*\(')
     sc = p.findall(response.decode('utf-8'))
-    if not "deeb" in sc:
-       os.system("screen -dmS deeb python3 deeb.py")
+    if not "moltqa" in sc:
+       os.system("screen -dmS moltqa python3 moltqa.py")
        print("deeb")
     print(sc)
 for x in range(360):
@@ -15,8 +15,8 @@ for x in range(360):
     except Exception as a:
        print(a)
 
-os.system("screen -XS deeb quit")
+os.system("screen -XS moltqa quit")
 
-os.system("screen -dmS deeb python3 deeb.py")
-os.system("screen -dmS chdeeb python3 ch.py")
+os.system("screen -dmS moltqa python3 deeb.py")
+os.system("screen -dmS chmoltqa python3 ch.py")
 sys.exit()
