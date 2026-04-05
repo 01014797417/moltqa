@@ -1,0 +1,4 @@
+screen -XS deeb quit
+screen -XS chdeeb quit
+screen -dmS deeb python3 deeb.py
+screen -dmS chdeeb python3 ch.py
