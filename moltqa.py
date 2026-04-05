@@ -6,14 +6,14 @@ from pymongo import MongoClient
 import os, sys
 mo = MongoClient("mongodb+srv://MAKER:MAKER@cluster0.5jwntiw.mongodb.net/?retryWrites=true&w=majority")
 mo = mo["database"]
-db = mo.deeb
-dbb = mo.deebdata
+db = mo.moltqa
+dbb = mo.moltqadata
 apro = {}
-token = "8067260488:AAGmJD2OdfDdj2bJ9vKAU0P-Kssh07khCdA"
+token = "8644976327:AAEZc4DpRYeRrkdXI8TqFTjJqR557ln2ik4"
 app = Client("ElNqYbD", api_id=20702511, api_hash="5c9b9dbf8394f4d247e60cd729ad5e4a", bot_token=token)
-devs = ["NQYYB", "D_eldeep1", "#ameragama", "Dohamedfathy", "abdellah1632003"]
+devs = ["NQYYB", "AhmedAbouelela1998"]
 ban = [1343308286]
-txt = """مرحبا بك في بوت تيم اسك
+txt = """مرحبا بك في بوت تيم الملتقي
 يمكن الاستمتاع الي التسجيلات الخاصه بكليه الحقوق
 يتم مراجعه طلبات الاستماع بواسطة الاداره
 تم تطوير هذه الاداه بواسطة [احمد النقيب ☘️☕](https://t.me/NQYYB)"""
@@ -131,7 +131,7 @@ def men(name, id=None):
 
 @app.on_message(filters.command("حدث"))
 async def upppp(c, m):
-    os.system("screen -dmS deeb python3 deeb.py")
+    os.system("screen -dmS moltqa python3 moltqa.py")
     sys.exit()
 
 @app.on_message(filters.command("start"))
